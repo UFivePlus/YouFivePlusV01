@@ -1,10 +1,13 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <!-- The color of the app's action bar (Top). -->
         <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- darker app branding color for the app's action bar (Top) -->
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 

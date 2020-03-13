@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <!-- The color of the app's action bar (Top). -->
+    <color name="colorPrimary">#001109</color>
+    <!-- darker app branding color for the app's action bar (Top) -->
+    <color name="colorPrimaryDark">#000000</color>
+    <!-- theme UI controls like checkboxes and text fields -->
     <color name="colorAccent">#D81B60</color>
+
+    <!-- controls the ‘normal’ state of components such as an
+  unselected EditText, and unselected Checkboxes and RadioButtons-->
+    <color name="colorControlNormal">#FFFFFF</color>
+
+    <!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight.
+
+         colorControlActivated overrides colorAccent as the activated or
+         checked state for Checkboxes and RadioButtons
+
+         colorControlHighlight controls the ripple coloring
+     -->
+
+    <!--Custom Colors -->
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorYellow">#F5E032</color>
+    <color name="colorRed">#FC1808</color>
+    <color name="md_red_A200">#FF5252</color>
+    <color name="md_indigo_A200">#536DFE</color>
+    <color name="md_amber_A200">#FFD740</color>
+    <color name="md_green_A200">#69F0AE</color>
+
+    <!--grey-->
+    <color name="md_grey_800">#424242</color>
+    <color name="md_grey_900">#212121</color>
+    <color name="md_white_1000">#ffffff</color>
+
+
 </resources>
