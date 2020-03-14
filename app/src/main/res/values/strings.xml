@@ -5,5 +5,8 @@
     <string name="facebook_app_id">[APP_ID]</string>
     <string name="fb_login_protocol_scheme">fb[APP_ID]</string>
 
+    <string name="category_prompt">Choose a Category</string>
+    <string name="welcome_intro">The easiest way to shcedule your daily personal activities, follow influential people in society and put your work out there. Watch the tutorial video or you can get started.</string>
+
 
 </resources>

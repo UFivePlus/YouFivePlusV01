@@ -11,4 +11,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- SLide to act for after login -->
+    <style name="SlideToActView.Example">
+        <item name="android:elevation">6dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
 </resources>
