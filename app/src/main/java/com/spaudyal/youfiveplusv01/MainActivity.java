@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
     //method for opening forgot password
     protected void openForgotPasswordLayout(){
-        Intent intent = new Intent(this, RegistrationActivity.class);
+        Intent intent = new Intent(this, ForgotPasswordUserInfo.class);
         startActivity(intent);
     }
 

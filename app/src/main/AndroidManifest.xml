@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CongratsReferal"></activity>
+        <activity android:name=".ForgotPasswordUserInfo"></activity>
+        <activity android:name=".CongratsReferal" />
         <activity android:name=".QRCodeGenerator" />
         <activity android:name=".WelcomeToU5" />
         <activity android:name=".RegistrationActivity" />
