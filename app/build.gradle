@@ -9,6 +9,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //For using vector drawables
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -28,4 +31,15 @@ dependencies {
 
     //for SplashScreen
     implementation 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
+
+    //For using TextInputLayout
+    implementation 'com.google.android.material:material:1.1.0'
+
+    //google button
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+
+    //facebook button
+    implementation 'com.facebook.android:facebook-login:[5,6)'
+
+
 }
