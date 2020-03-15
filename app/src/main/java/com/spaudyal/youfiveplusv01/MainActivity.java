@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     //method that opens up after login options Page
     protected void openAfterLoginActivityPage(){
-        Intent intent = new Intent(this, RegistrationActivity.class);
+        Intent intent = new Intent(this, AfterLoginScreen.class);
         startActivity(intent);
     }
 
