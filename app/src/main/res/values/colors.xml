@@ -5,7 +5,7 @@
     <!-- darker app branding color for the app's action bar (Top) -->
     <color name="colorPrimaryDark">#000000</color>
     <!-- theme UI controls like checkboxes and text fields -->
-    <color name="colorAccent">#6AA163</color>
+    <color name="colorAccent">#FDFCFC</color>
 
     <!-- controls the ‘normal’ state of components such as an
   unselected EditText, and unselected Checkboxes and RadioButtons-->
