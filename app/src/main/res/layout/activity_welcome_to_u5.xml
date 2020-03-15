@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".WelcomeToU5">
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="249dp"
+        android:layout_height="274dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_logo" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="370dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aladin"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/welcome_intro"
+        android:textAlignment="center"
+        android:textColor="#8FE27C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="362dp"
+        android:layout_height="111dp"
+        android:fontFamily="@font/yatra_one"
+        android:text="Welcome"
+        android:textColor="#FEE70B"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aladin"
+        android:text="Continue to our tutorial video."
+        android:textColor="#F90009"
+        android:textColorHighlight="#FCFAFA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="@+id/textView22" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+        <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/slideToActView4"
+            style="@style/SlideToActView.Example"
+            app:area_margin="-8dp"
+            app:inner_color="@color/md_grey_800"
+            app:outer_color="@color/md_amber_A200"
+            app:slider_height="48dp"
+            app:text="Get Started"
+            app:text_style="bold" />
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
