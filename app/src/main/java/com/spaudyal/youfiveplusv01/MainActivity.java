@@ -3,7 +3,10 @@ package com.spaudyal.youfiveplusv01;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //code to open 5 options menu from the login button
-        loginButton = findViewById(R.id.email_login_button);
+        loginButton = findViewById(R.id.email_login_button5);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
                 openForgotPasswordLayout();
             }
         });
+
+         ImageView googleImage = findViewById(R.id.imageView7);
+         Animation bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce);
+         googleImage.startAnimation(bounceAnimation);
 
 
     }

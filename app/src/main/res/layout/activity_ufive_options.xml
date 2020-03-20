@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UFiveOptionsActivity">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/colorBlack"
+    android:orientation="horizontal" >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/U"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Main Logo"
+        android:src="@drawable/main_logo"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/Five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Main Logo"
+        android:src="@drawable/main_logo"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/Plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Main Logo"
+        android:src="@drawable/main_logo"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
