@@ -50,5 +50,9 @@ dependencies {
     //for profile
     implementation 'de.hdodenhof:circleimageview:2.1.0'
 
+    //ferris Wheel
+    implementation 'ru.github.igla:ferriswheel:1.2'
+
+
 
 }

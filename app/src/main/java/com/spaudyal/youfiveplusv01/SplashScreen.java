@@ -56,7 +56,7 @@ public class SplashScreen extends AwesomeSplash {
 
         //transit to another activity here
         //or do whatever you want
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, CongratsReferal.class);
         startActivity(intent);
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }

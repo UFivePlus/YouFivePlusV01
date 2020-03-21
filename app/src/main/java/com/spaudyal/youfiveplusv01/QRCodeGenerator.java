@@ -56,7 +56,7 @@ public class QRCodeGenerator extends AppCompatActivity {
 
 
     }
-
+    //disable editText after you hit generate.
     private void disableEditText(EditText editText) {
         editText.setFocusable(false);
         editText.setEnabled(false);
