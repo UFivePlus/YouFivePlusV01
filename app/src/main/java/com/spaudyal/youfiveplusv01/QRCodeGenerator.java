@@ -47,6 +47,7 @@ public class QRCodeGenerator extends AppCompatActivity {
 
                     Bitmap bitmap = encodeAsBitmap(STR);
                     imageView.setImageBitmap(bitmap);
+                    //send this bitmap image to next activity right here.
                 } catch (WriterException ex) {
                     ex.printStackTrace();
                 }
@@ -67,6 +68,8 @@ public class QRCodeGenerator extends AppCompatActivity {
 
     protected void openCongratsReferal(){
         Intent intent = new Intent(this, CongratsReferal.class);
+
+
         startActivity(intent);
     }
 
