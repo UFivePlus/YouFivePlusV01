@@ -54,5 +54,4 @@ dependencies {
     implementation 'ru.github.igla:ferriswheel:1.2'
 
 
-
 }
