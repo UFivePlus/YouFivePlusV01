@@ -44,7 +44,7 @@ public class WelcomeToU5 extends AppCompatActivity {
     }
 
     protected void openReferalCodeGen(){
-        Intent intent = new Intent(this, QRCodeGenerator.class);
+        Intent intent = new Intent(this, GetRefText.class);
         startActivity(intent);
     }
 }

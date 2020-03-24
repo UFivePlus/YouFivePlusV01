@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CongratsBarCodeDisplay"></activity>
+        <activity android:name=".GenQRCode"></activity>
+        <activity android:name=".GetRefText" />
+        <activity android:name=".CongratsBarCodeDisplay" />
         <activity android:name=".CosmePay" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".FiveOptions" />

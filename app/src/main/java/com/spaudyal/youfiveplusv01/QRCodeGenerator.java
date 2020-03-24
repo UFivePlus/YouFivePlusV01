@@ -27,6 +27,7 @@ public class QRCodeGenerator extends AppCompatActivity {
     private final static int HEIGHT = 400;
     private TextInputEditText editText;
     private Button genButt;
+    private String refCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,20 +38,28 @@ public class QRCodeGenerator extends AppCompatActivity {
         final ImageView imageView = findViewById(R.id.myImage);
         editText = findViewById(R.id.textForCode);
         genButt = findViewById(R.id.genButt);
+        refCode = "";
 
         genButt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String STR = Objects.requireNonNull(editText.getText()).toString();
+//
+//                String STR = Objects.requireNonNull(editText.getText()).toString();
+//                disableEditText(editText);
+//                try {
+//
+//                    Bitmap bitmap = encodeAsBitmap(STR);
+//                    imageView.setImageBitmap(bitmap);
+//                    sendQR(bitmap);
+//                    //send this bitmap image to next activity right here.
+//                } catch (WriterException ex) {
+//                    ex.printStackTrace();
+//                }
+                refCode =  Objects.requireNonNull(editText.getText()).toString();
+                Intent intent = new Intent(getApplicationContext(), CongratsBarCodeDisplay.class);
+                intent.putExtra("msg", refCode);
+                //sendSTR(refCode);
                 disableEditText(editText);
-                try {
-
-                    Bitmap bitmap = encodeAsBitmap(STR);
-                    imageView.setImageBitmap(bitmap);
-                    //send this bitmap image to next activity right here.
-                } catch (WriterException ex) {
-                    ex.printStackTrace();
-                }
                 openCongratsReferal();
             }
         });
@@ -66,10 +75,13 @@ public class QRCodeGenerator extends AppCompatActivity {
         editText.setBackgroundColor(Color.TRANSPARENT);
     }
 
+    protected void sendSTR(String str){
+        Intent intent = new Intent(getApplicationContext(), CongratsBarCodeDisplay.class);
+        intent.putExtra("msg", str);
+    }
+
     protected void openCongratsReferal(){
         Intent intent = new Intent(this, CongratsReferal.class);
-
-
         startActivity(intent);
     }
 
