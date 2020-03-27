@@ -5,13 +5,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.sanojpunchihewa.glowbutton.GlowButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AfterLoginScreen extends AppCompatActivity {
 
-    protected GlowButton fiveBuss, uPlus ;
+    protected GlowButton fiveBuss, uPlus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,10 @@ public class AfterLoginScreen extends AppCompatActivity {
                 openPlusSide();
             }
         });
+
+        YoYo.with(Techniques.BounceInDown)
+                .duration(700)
+                .playOn(findViewById(R.id.imageView8));
 
 
 
