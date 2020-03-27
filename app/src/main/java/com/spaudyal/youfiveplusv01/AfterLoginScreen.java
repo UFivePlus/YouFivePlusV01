@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.ncorti.slidetoact.SlideToActView;
+import com.sanojpunchihewa.glowbutton.GlowButton;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AfterLoginScreen extends AppCompatActivity {
+
+    protected GlowButton fiveBuss, uPlus ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +26,19 @@ public class AfterLoginScreen extends AppCompatActivity {
             }
         });
 
-        final SlideToActView slide = findViewById(R.id.slideToActView6);
-        slide.setOnSlideCompleteListener(new SlideToActView.OnSlideCompleteListener() {
+        fiveBuss = findViewById(R.id.glowButton2);
+        fiveBuss.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onSlideComplete(@NonNull SlideToActView view) {
-                openU5Gallery();
+            public void onClick(View view) {
+                openFiveBisOptions();
+            }
+        });
+
+        uPlus = findViewById(R.id.glowButton);
+        uPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPlusSide();
             }
         });
 
@@ -37,8 +46,13 @@ public class AfterLoginScreen extends AppCompatActivity {
 
     }
 
-    protected void openU5Gallery(){
-        Intent intent = new Intent(this, U5Gallery.class);
+    protected void openPlusSide(){
+        Intent intent = new Intent(this, PlusSide.class);
+        startActivity(intent);
+    }
+
+    protected void openFiveBisOptions(){
+        Intent intent = new Intent(this, FiveOptions.class);
         startActivity(intent);
     }
 

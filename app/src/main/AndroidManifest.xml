@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GenQRCode"></activity>
+        <activity android:name=".PlusSide"></activity>
+        <activity android:name=".GenQRCode" />
         <activity android:name=".GetRefText" />
         <activity android:name=".CongratsBarCodeDisplay" />
         <activity android:name=".CosmePay" />
@@ -25,7 +26,6 @@
         <activity android:name=".PhoneVerification" />
         <activity android:name=".ForgotPasswordUserInfo" />
         <activity android:name=".CongratsReferal" />
-        <activity android:name=".QRCodeGenerator" />
         <activity android:name=".WelcomeToU5" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".SplashScreen">

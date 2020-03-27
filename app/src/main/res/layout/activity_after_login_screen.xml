@@ -6,29 +6,58 @@
     android:layout_height="match_parent"
     android:background="@color/colorBlack">
 
+
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="404dp"
-        android:layout_height="413dp"
+        android:layout_width="378dp"
+        android:layout_height="266dp"
         android:layout_gravity="center"
+        android:layout_marginTop="60dp"
         android:src="@drawable/main_logo"
-        app:layout_constraintBottom_toTopOf="@+id/slideToActView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.sanojpunchihewa.glowbutton.GlowButton
+        android:id="@+id/glowButton"
+        android:layout_width="155dp"
+        android:layout_height="160dp"
+        android:fontFamily="@font/yatra_one"
+        android:padding="20dp"
+        android:text="U-Plus"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:buttonColor="#EEEE12"
+        app:cornerRadius="100dp"
+        app:glowColor="#FFFF19"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintStart_toEndOf="@+id/glowButton2"
+        app:layout_constraintTop_toTopOf="@+id/glowButton2"
+        app:pressedGlowSize="25dp"
+        app:unpressedGlowSize="10dp" />
 
-    <com.ncorti.slidetoact.SlideToActView
-        android:id="@+id/slideToActView6"
-        style="@style/SlideToActView.Example"
-        app:inner_color="@color/md_grey_800"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <com.sanojpunchihewa.glowbutton.GlowButton
+        android:id="@+id/glowButton2"
+        android:layout_width="155dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/yatra_one"
+        android:padding="30dp"
+        android:text="5Tologyou"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:buttonColor="#E02212"
+        app:cornerRadius="100dp"
+        app:glowColor="#FC1808"
+        app:layout_constraintEnd_toStartOf="@+id/glowButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:outer_color="@color/md_amber_A200"
-        app:text="Accent Amber - Grey 800" />
+        app:pressedGlowSize="25dp"
+        app:unpressedGlowSize="10dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

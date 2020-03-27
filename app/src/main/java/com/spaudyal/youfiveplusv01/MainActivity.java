@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    
 
     //method that opens up signup Page
     protected void openSignUpPage(){

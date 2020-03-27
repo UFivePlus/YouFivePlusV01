@@ -53,5 +53,8 @@ dependencies {
     //ferris Wheel
     implementation 'ru.github.igla:ferriswheel:1.2'
 
+    //glow buttons.
+    implementation 'com.github.SanojPunchihewa:GlowButton:1.0.0'
+
 
 }

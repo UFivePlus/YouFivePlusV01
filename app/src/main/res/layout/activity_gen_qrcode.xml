@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="85dp"
         android:fontFamily="@font/aladin"
         android:text="Your U5+ Referal Code is "
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -48,7 +48,7 @@
         android:src="@android:drawable/ic_menu_close_clear_cancel" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/shareButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -57,16 +57,16 @@
 
     <ImageView
         android:id="@+id/qrDisplay"
-        android:layout_width="305dp"
-        android:layout_height="326dp"
+        android:layout_width="390dp"
+        android:layout_height="469dp"
         android:layout_below="@+id/textView1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="45dp"
-        android:layout_marginEnd="78dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
         android:src="@drawable/code_gen" />
 
 </RelativeLayout>
